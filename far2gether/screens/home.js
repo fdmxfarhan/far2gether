@@ -12,22 +12,20 @@ import {
   View,
   Platform,
 } from 'react-native';
-import colors, { gray } from '../components/colors';
+import colors from '../components/colors';
 import Icon from 'react-native-vector-icons/FontAwesome';
 import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import Header from '../components/header';
-import { white } from 'chalk';
 import DocumentPicker from 'react-native-document-picker'
-import MediaControls, { PLAYER_STATES } from 'react-native-media-controls';
-import Video from 'react-native-video';
+// import MediaControls, { PLAYER_STATES } from 'react-native-media-controls';
+// import Video from 'react-native-video';
 
 
 
 
 export default home = () => {
     var [video, setVideo] = useState('undefined');
-    // var Content = <View></View>;
     var pickFile = () => {
         try {
             DocumentPicker.pick({
@@ -53,7 +51,6 @@ export default home = () => {
     return(
         <View style={styles.container}>
             <Header title={'far2gether'}/>
-            {/* <Content /> */}
             <TouchableOpacity style={styles.plusButton} onPress={pickFile}>
                 <Icon  style={styles.plusButtonIcon} name={'plus'} />
             </TouchableOpacity>

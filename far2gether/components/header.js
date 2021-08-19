@@ -55,7 +55,7 @@ const styles = StyleSheet.create({
     },
     homeButtonIcon: {
         flex: 2,
-        fontSize: 23,
+        fontSize: 25,
         color: colors.gray,
         paddingHorizontal: 10,
         paddingBottom: 0,
@@ -68,6 +68,6 @@ const styles = StyleSheet.create({
         color: colors.blue,
         textAlign: 'center',
         paddingVertical: 10,
-        paddingBottom: 10,
+        paddingBottom: 5,
     }
 });
